@@ -91,10 +91,10 @@ SphereCollider:
   m_GameObject: {fileID: 8315990711935568935}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.31099978
+  m_Center: {x: 0, y: 1.0151193, z: 0}
 --- !u!1 &8315990711942123087
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8315990711942123087}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -282,7 +282,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990711946528078}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -377,7 +377,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990712267821638}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -390,6 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8315990712463993193}
+  - component: {fileID: 742594036147995264}
   m_Layer: 0
   m_Name: NPC_Scott
   m_TagString: Untagged
@@ -412,6 +413,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &742594036147995264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315990712463993198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.1649756, z: 1}
+  m_Center: {x: 0, y: -0.105688915, z: 0}
 --- !u!1 &8315990712767548530
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +517,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8315990712767548530}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -599,7 +613,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8315990712829901618}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -695,7 +709,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990713019768528}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -790,7 +804,7 @@ BoxCollider:
   m_GameObject: {fileID: 8315990713041670535}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -885,7 +899,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8315990713076031749}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -981,7 +995,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990713110434421}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1076,7 +1090,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990713614282648}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1183,7 +1197,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 8315990713682874302}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -1279,7 +1293,7 @@ SphereCollider:
   m_GameObject: {fileID: 8315990713739490208}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.30432928
+  m_Center: {x: 0, y: 1.0509466, z: 0}
