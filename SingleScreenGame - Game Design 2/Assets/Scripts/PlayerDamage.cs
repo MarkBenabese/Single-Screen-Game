@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class PlayerDamage : MonoBehaviour
 {
     [SerializeField] private Collider playerCheck;
     [SerializeField] private LayerMask playerLayers;
-    [SerializeField] private GameManager manager;
+    //[SerializeField] private GameManager manager;
   
 
 
