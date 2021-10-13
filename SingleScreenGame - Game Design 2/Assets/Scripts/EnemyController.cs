@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
         if (playerDistance < awareAI)
         {
             LookAtPlayer();
-            Debug.Log("Seen");
+            //Debug.Log("Seen");
         }
         
         if (playerDistance < awareAI)

@@ -16,7 +16,7 @@ public class PlayerDamage : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
       
-            transform.position = new Vector3(0.067f,1.52f,-0.37f);
+            transform.position = new Vector3(0f,0f,0f);
         }
     }
 }
