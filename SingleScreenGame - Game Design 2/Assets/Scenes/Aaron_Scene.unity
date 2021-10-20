@@ -2443,6 +2443,8 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 64
+  manager: {fileID: 0}
+  scoreToGive: 0
 --- !u!43 &403288314
 Mesh:
   m_ObjectHideFlags: 0

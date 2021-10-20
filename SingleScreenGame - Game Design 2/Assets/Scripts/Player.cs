@@ -5,16 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameManager manager;
-    public int maxEmotion = 100;
-    public int currentEmotion;
-
-    public EmotionBar emotionBar;
-
     // Start is called before the first frame update
     void Start()
     {
-        currentEmotion = 30;
-        emotionBar.SetMaxEmotion(maxEmotion);
     }
 
     // Update is called once per frame
