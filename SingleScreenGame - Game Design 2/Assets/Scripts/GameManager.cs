@@ -31,8 +31,15 @@ public class GameManager : MonoBehaviour
     
     public void AddScore(int emotionAmt)
     {
-        currentEmotion += emotionAmt;
-        emotionBar.SetEmotion(currentEmotion);
+        if (currentEmotion >= 101)
+        {
+            currentEmotion = 100;
+        }
+        else
+        {
+            currentEmotion += emotionAmt;
+            emotionBar.SetEmotion(currentEmotion);
+        }
     }
     
     
