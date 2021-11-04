@@ -9,7 +9,8 @@ public class EnemyController : MonoBehaviour
     public float awareAI = 10f;
     public float AIMoveSpeed;
     public float damping = 6.0f;
-
+    public bool Spotted = false;
+    public Animator anim;
     public Transform[] navPoint;
     public UnityEngine.AI.NavMeshAgent agent;
     public int destPoint = 0;
@@ -19,8 +20,9 @@ public class EnemyController : MonoBehaviour
     {
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         agent.destination = goal.position;
-
+        anim = GetComponentInChildren<Animator>();
         agent.autoBraking = false;
+        
     }
 
     // Update is called once per frame
@@ -38,8 +40,10 @@ public class EnemyController : MonoBehaviour
         {
             if (playerDistance > 2f)
                 Chase();
+                
             else 
                 GoToNextPoint();
+                
         }
 
         {
@@ -60,11 +64,15 @@ public class EnemyController : MonoBehaviour
             return;
         agent.destination = navPoint[destPoint].position;
         destPoint = (destPoint + 1) % navPoint.Length;
+        Spotted = false;
+        anim.SetBool("Spotted", false);
     }
 
 
     void Chase()
     {
         agent.SetDestination(player.transform.position);
+        Spotted = true;
+        anim.SetBool("Spotted", true);
     }
 }

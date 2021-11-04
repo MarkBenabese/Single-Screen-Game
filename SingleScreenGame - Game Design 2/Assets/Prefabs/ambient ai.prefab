@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7962282630304907159}
   m_Layer: 0
   m_Name: ambient ai
-  m_TagString: Enemy
+  m_TagString: ambientnpc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +118,8 @@ MonoBehaviour:
   awareAI: 10
   AIMoveSpeed: 5
   damping: 6
+  Spotted: 0
+  anim: {fileID: 0}
   navPoint:
   - {fileID: 0}
   - {fileID: 0}
