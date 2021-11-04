@@ -10,11 +10,15 @@ public class FirstPersonMovement : MonoBehaviour
     public bool IsRunning { get; private set; }
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
+    public Animator anim1;
 
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
-
+    void start()
+    {
+        anim1 = GetComponentInChildren<Animator>();
+    }
 
 
     void Awake()
@@ -28,12 +32,20 @@ public class FirstPersonMovement : MonoBehaviour
         // Update IsRunning from input.
         IsRunning = canRun && Input.GetKey(runningKey);
 
+
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
+            
         }
+        anim1.SetBool("Dogwalking", true); 
+
+        
+                
+       
+        
 
         // Get targetVelocity from input.
         Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
