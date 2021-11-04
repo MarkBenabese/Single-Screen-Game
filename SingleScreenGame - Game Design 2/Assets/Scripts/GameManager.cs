@@ -14,9 +14,9 @@ public class GameManager : MonoBehaviour
     
     private void Start()
     {
-        currentEmotion = 25;
+        currentEmotion = 30;
         emotionBar.SetEmotion(currentEmotion);
-        //PauseGame();
+        PauseGame();
     }
 
     public void PauseGame()
