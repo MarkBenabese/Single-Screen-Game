@@ -40,7 +40,7 @@ public class FirstPersonMovement : MonoBehaviour
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
             
         }
-        anim1.SetBool("Dogwalking", true); 
+      
 
         
                 
