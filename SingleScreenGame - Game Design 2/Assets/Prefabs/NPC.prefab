@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: 3320599632883859905}
   - component: {fileID: 8404078389882254820}
   - component: {fileID: 8404078389882254821}
-  - component: {fileID: 8404078389882254619}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -262,7 +261,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781541010463998799}
-  m_LocalRotation: {x: -0, y: 0.9057578, z: -0, w: 0.42379594}
+  m_LocalRotation: {x: 0, y: 0.9057575, z: 0, w: 0.42379645}
   m_LocalPosition: {x: 7.44, y: 0.79999995, z: -40.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -304,24 +303,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8404078389882254619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781541010463998799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5599a00c46ce2ce4bb38e1087d3bf64b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCheck: {fileID: 0}
-  playerLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  manager: {fileID: 0}
-  scoreToGive: 0
 --- !u!1 &882062288182152731
 GameObject:
   m_ObjectHideFlags: 0

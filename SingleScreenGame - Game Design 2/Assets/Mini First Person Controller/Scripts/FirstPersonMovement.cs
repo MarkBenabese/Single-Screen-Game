@@ -38,14 +38,9 @@ public class FirstPersonMovement : MonoBehaviour
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
-            
+            anim1.SetBool("isRunning", true);
         }
-      
-
-        
-                
-       
-        
+        else anim1.SetBool("isRunning", false);
 
         // Get targetVelocity from input.
         Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);

@@ -5,9 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameManager manager;
+    public bool isSitting = false;
+    public bool isRollover = false;
+    public bool isSpeaking = false;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -18,6 +24,7 @@ public class Player : MonoBehaviour
         {
             manager.AddScore(-10);
         }
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             manager.AddScore(10);
