@@ -17,7 +17,7 @@ public class PlayerDamage : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             
-            transform.position = new Vector3(30.56f,1.51f,-42.38f);
+            transform.position = new Vector3(114.236f, 4.783f, 44.041f);
 
             
             manager.AddScore(-scoreToGive);
