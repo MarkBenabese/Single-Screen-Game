@@ -14,7 +14,7 @@ public class Dog_Action : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player") && ()
+        if (other.gameObject.tag == "Player")
         {
             manager.AddScore(scoreToGive);
         }
