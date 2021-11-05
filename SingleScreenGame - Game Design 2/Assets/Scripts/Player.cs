@@ -70,5 +70,14 @@ public class Player : MonoBehaviour
             anim1.SetBool("isSpeaking", false);
             anim1.SetBool("isRunning", false);
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            anim1.SetBool("Grounded", false);
+        }
+        else
+        {
+            anim1.SetBool("Grounded", true);
+        }
     }
 }
