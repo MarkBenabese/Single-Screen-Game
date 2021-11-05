@@ -8,18 +8,15 @@ public class Dog_Action : MonoBehaviour
     [SerializeField] private LayerMask playerLayers;
     [SerializeField] private GameManager manager;
     [SerializeField] private int scoreToGive;
+    [SerializeField] private GameObject player;
+
 
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player") && ()
         {
-
-            //transform.position = new Vector3(22.89161f, 4.205579f, -42.29498f);
-
-
             manager.AddScore(scoreToGive);
-
         }
     }
 }

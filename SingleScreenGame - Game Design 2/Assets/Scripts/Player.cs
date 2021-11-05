@@ -39,8 +39,32 @@ public class Player : MonoBehaviour
         {
             anim1.SetBool("isRunning", true);
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            anim1.SetBool("isRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            anim1.SetBool("isRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            anim1.SetBool("isRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            anim1.SetBool("isSitting", true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            anim1.SetBool("isRunning", true);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            anim1.SetBool("isRunning", true);
+        }
         else
-        { 
+        {
             anim1.SetBool("isSitting", false);
             anim1.SetBool("isRollover", false);
             anim1.SetBool("isSpeaking", false);
